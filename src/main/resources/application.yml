@@ -2,15 +2,15 @@ spring:
   application:
     name: eshop-app
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521/XEPDB1 # Modify according to your database
-    username: eshop # Replace with your Oracle username
-    password: oracle21 # Replace with your Oracle password
-    driver-class-name: oracle.jdbc.OracleDriver # Oracle JDBC Driver
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: eshop
+    password: oracle21
+    driver-class-name: oracle.jdbc.OracleDriver
 
   jpa:
     hibernate:
-      ddl-auto: update # Options: validate, update, create-drop (choose based on your needs)
+      ddl-auto: update # Options: validate, update, create-drop
     show-sql: true # Show SQL queries in logs
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.OracleDialect # Correct dialect for Oracle 12c and later
+        dialect: org.hibernate.dialect.OracleDialect
